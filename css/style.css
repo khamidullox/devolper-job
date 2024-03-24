@@ -1,0 +1,181 @@
+/* league-spartan-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/league-spartan-v11-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #effafa;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  color: #5ca5a5;
+  font-weight: 700;
+}
+.header {
+  background-image: url("../images/header.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+.job__list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+.job__template {
+}
+.job__item {
+  width: 1110px;
+  height: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 5px 5px #11111128;
+  position: relative;
+}
+img {
+  border-radius: 50%;
+}
+.job__info {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+}
+.job__company {
+  color: #5ca5a5;
+  font-size: 18px;
+}
+.job__title {
+  font-weight: 700;
+  font-size: 22px;
+}
+.job__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.5;
+  gap: 45px;
+}
+.job__post {
+}
+.job__employment {
+  position: relative;
+}
+.job__employment::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  border: 1px solid #111;
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  background-color: #111;
+  border-radius: 50%;
+}
+.job__location {
+  position: relative;
+}
+.job__location::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  border: 1px solid #111;
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  background-color: #111;
+  border-radius: 50%;
+}
+
+.job__request {
+  display: flex;
+  gap: 10px;
+  color: #5ca5a5;
+}
+.job__role {
+}
+.job__level,
+.job__role,
+.job__lang,
+.job__tol {
+  padding: 8px;
+  background-color: #effafa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.job__languages {
+  display: flex;
+  gap: 10px;
+}
+.job__lang {
+}
+.job__tools {
+  display: flex;
+  gap: 10px;
+}
+.job__new {
+  background-color: #5ca5a5;
+  padding: 6px 7px;
+  padding-bottom: 3px;
+  color: #ffffff;
+  margin-left: 8px;
+  border-radius: 18px;
+  margin-right: 8px;
+}
+.job__featured {
+  background-color: #2b3939;
+  padding: 6px 7px;
+  padding-bottom: 3px;
+  color: #ffffff;
+  border-radius: 18px;
+}
+.job__best {
+  height: 100%;
+  position: absolute;
+  width: 5px;
+  z-index: 1;
+
+  left: 0px;
+  border-radius: 8px 0 0 8px;
+}
+.job__div {
+  background-color: #5ca5a5;
+}
