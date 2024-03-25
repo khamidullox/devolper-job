@@ -45,6 +45,9 @@ button {
   background-size: cover;
   width: 100%;
   height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .job__list {
   margin-top: 50px;
@@ -140,7 +143,12 @@ img {
   background-color: #effafa;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    background-color: #5ca5a5;
+    color: #ffffff;
+  }
 }
+
 .job__languages {
   display: flex;
   gap: 10px;
@@ -159,6 +167,7 @@ img {
   margin-left: 8px;
   border-radius: 18px;
   margin-right: 8px;
+  font-size: 13px;
 }
 .job__featured {
   background-color: #2b3939;
@@ -166,6 +175,7 @@ img {
   padding-bottom: 3px;
   color: #ffffff;
   border-radius: 18px;
+  font-size: 13px;
 }
 .job__best {
   height: 100%;
@@ -178,4 +188,56 @@ img {
 }
 .job__div {
   background-color: #5ca5a5;
+}
+.job__link__lang {
+  width: 1110px;
+  height: 72px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 5px 5px #11111128;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.job__link__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.job__lang__header {
+  /* padding: 10px; */
+  padding-left: 10px;
+  margin: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #effafa;
+  position: relative;
+}
+.job__btn__delete {
+  padding: 8px;
+  padding-top: 8px;
+  background-color: #5ca5a5;
+  color: #ffffff;
+  padding-left: -5px;
+  margin-right: -10px;
+  margin-left: 7px;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  align-items: center;
+}
+.job__btn__delete:hover {
+  background-color: #2b3939;
+}
+.job__clear {
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    /* color: #ffffff; */
+  }
 }
